@@ -1,0 +1,17 @@
+/*
+We create this styles sheet to theme the application website with basic appearances that will allow the mounting
+of content to be straight forward...
+*/
+body {
+  margin: 0;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  background: linear-gradient(135deg, #888, #000);
+}
+
+/*# sourceMappingURL=theme.css.map */

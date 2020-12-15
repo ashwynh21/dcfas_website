@@ -1,0 +1,145 @@
+/*
+We create this styles sheet to theme the application website with basic appearances that will allow the mounting
+of content to be straight forward...
+*/
+body {
+  margin: 0;
+  font-family: Segoe UI, sans-serif;
+  letter-spacing: 2px;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  background: linear-gradient(135deg, #888, #000);
+}
+
+@keyframes popin {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes fromright {
+  from {
+    transform: translateX(256px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.menu {
+  position: relative;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 256ms;
+  transform: scale(0);
+}
+.menu:hover {
+  transition: transform 256ms;
+  transform: scale(1.1);
+}
+.menu.load {
+  animation: popin 280ms cubic-bezier(0.12, 1.8, 0.55, 0.84) 512ms both;
+}
+
+.filter {
+  filter: drop-shadow(0 2px 4px #00000008);
+}
+
+#floater {
+  position: fixed;
+  right: -256px;
+  bottom: 0;
+  top: 0;
+  width: 256px;
+  background: linear-gradient(135deg, #000, #888);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation > .logo {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 48px;
+  height: 92px;
+  width: 144px;
+}
+.navigation > .logo > img {
+  width: 64px;
+}
+.navigation > .menu {
+  margin-right: 32px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 32px;
+}
+.content > div {
+  flex: 1;
+}
+.content > div:first-child {
+  margin-top: 128px;
+}
+.content > div:first-child > p {
+  font-weight: bold;
+  font-size: 24pt;
+  color: white;
+  text-shadow: 0 4px 4px #0004;
+  letter-spacing: 4px;
+  transform: translateX(-256px);
+  transition: transform 256ms;
+}
+.content > div:first-child > div {
+  margin-top: 64px;
+  transform: translateX(-256px);
+  transition: transform 256ms;
+}
+.content > div:first-child > div > p:first-child {
+  color: #FFAA02;
+  font-size: 10pt;
+}
+.content > div:first-child > div > p:last-child {
+  color: white;
+  font-size: 8pt;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+.content > div:last-child {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+.content > div:last-child > p {
+  cursor: pointer;
+  color: white;
+  font-weight: lighter;
+  font-size: 14pt;
+  transition: font-weight 256ms, color 256ms, transform 256ms;
+  transform: scale(1) translateX(256px);
+}
+.content > div:last-child > p:hover {
+  transition: font-weight 256ms, color 256ms;
+  font-weight: bold;
+  color: #FFAA02;
+}
+.content > div:last-child > p:active {
+  transition: transform 256ms;
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=style.css.map */

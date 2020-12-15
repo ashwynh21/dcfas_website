@@ -1,0 +1,21 @@
+#top {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+#bottom {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.filter {
+  filter: drop-shadow(0 2px 4px #00000008);
+}
+
+/*# sourceMappingURL=menu.css.map */

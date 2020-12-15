@@ -1,0 +1,10 @@
+@keyframes popin {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=animations.css.map */
