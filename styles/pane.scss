@@ -1,0 +1,41 @@
+
+.pane {
+  display: flex;
+  flex-flow: column;
+
+  margin-top: 64px;
+  > .panel {
+    background: white;
+    box-shadow: 0 4px 8px 1px #0002;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    margin: 16px 32px;
+    border-radius: 16px;
+
+    > img {
+      width : 64px;
+      margin-top: -16px;
+    }
+    > div {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+
+      > p {
+        text-align: center;
+      }
+      > p:first-child {
+        font-weight: bold;
+        font-size: 10pt;
+      }
+      > p:last-child {
+        font-weight: lighter;
+        font-size: 8pt;
+        margin: 24px;
+      }
+    }
+  }
+}

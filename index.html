@@ -8,8 +8,10 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
 
     <script src="node_modules/animejs/lib/anime.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
 </head>
 <body onload="loader.load()">
 <!--
@@ -72,7 +74,47 @@ Here we will need to add the single page for the splash content
 <!--
 So then we add in the panels for showing what the organization does...
 -->
+<div class="pane">
+    <div data-aos="fade-right" class="panel">
+        <img src="assets/icons/dabel.png" alt="">
+        <div>
+            <p>Free From the burden of over-endebtment</p>
+            <p>Allow us to manage your debts for you, free yourself from overbearing credit providers</p>
+        </div>
+    </div>
+    <div data-aos="fade-left" class="panel">
+        <img src="assets/icons/savings.png" alt="">
+        <div>
+            <p>Protect Your Income</p>
+            <p>Barely keeping any income for a living, let us help and keep you living considered with your credit providers</p>
+        </div>
+    </div>
+    <div data-aos="fade-right" class="panel">
+        <img src="assets/icons/quality.png" alt="">
+        <div>
+            <p>We are No. 1</p>
+            <p>We are the best when considering your well being, allow us to help you</p>
+        </div>
+    </div>
+</div>
 
+<!--
+Now we add in the what of the page
+-->
+<div class="what">
+    <p data-aos="fade-left">We are Debt Counsellors</p>
+    <div>
+        <div>
+            <img src="assets/icons/purse.png" alt="">
+        </div>
+        <p>Debt Rescheduling</p>
+        <p>We Re-order debt premiums with credit providers</p>
+        <p>We spend time with your credit providers, re-ordering and negotiating for better premiums that you, the client, can cope with</p>
+        <div>
+            <img src="assets/images/negotiating.jpg" alt="">
+        </div>
+    </div>
+</div>
 
 <!--
 We then creat the menu here
@@ -85,5 +127,8 @@ We then creat the menu here
 <script src="scripts/loader.js"></script>
 <script src="scripts/index.js"></script>
 
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

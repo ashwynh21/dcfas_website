@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ashwynh21/dcfas_website#readme",
   "dependencies": {
     "animejs": "^3.2.1",
+    "aos": "^2.3.4",
     "express": "^4.17.1"
   }
 }
