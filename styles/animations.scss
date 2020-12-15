@@ -1,0 +1,8 @@
+@keyframes popin {
+  from { transform: scale(0); }
+  to   { transform: scale(1); }
+}
+@keyframes fromright {
+  from { transform: translateX(256px); }
+  to   { transform: translateX(0); }
+}

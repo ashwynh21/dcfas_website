@@ -1,0 +1,20 @@
+/*
+We create this styles sheet to theme the application website with basic appearances that will allow the mounting
+of content to be straight forward...
+*/
+
+body {
+  margin: 0;
+  font-family: Segoe UI, sans-serif;
+  letter-spacing: 2px;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  z-index: -1;
+
+  background: linear-gradient(135deg, #888, #000);
+}

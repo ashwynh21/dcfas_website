@@ -1,0 +1,25 @@
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > .logo {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-right-radius: 48px;
+
+    height: 92px;
+    width: 144px;
+
+    > img {
+      width: 64px
+    }
+  }
+  > .menu {
+    margin-right: 32px;
+  }
+}

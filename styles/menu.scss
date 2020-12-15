@@ -1,0 +1,37 @@
+@import "animations";
+
+$primary: #CC8100;
+$secondary: #FFAA02;
+
+.menu {
+  position: relative;
+  z-index: 5;
+
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+
+  transition: transform 256ms;
+  transform: scale(.0);
+
+  &:hover {
+    transition: transform 256ms;
+    transform: scale(1.1);
+  }
+  &.load {
+    animation: popin 280ms cubic-bezier(.12,1.8,.55,.84) 512ms both;
+  }
+}
+.filter {
+  filter: drop-shadow(0 2px 4px #00000008);
+}
+#floater {
+  position: fixed;
+  right: -256px;
+  bottom: 0;
+  top: 0;
+
+  width: 256px;
+  background: linear-gradient(135deg, #000, #888);
+}

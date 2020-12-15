@@ -1,0 +1,68 @@
+$primary: #FFAA02;
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 32px;
+
+  > div {
+    flex: 1;
+  }
+  > div:first-child {
+    margin-top: 128px;
+    > p {
+      font-weight: bold;
+      font-size: 24pt;
+
+      color: white;
+      text-shadow: 0 4px 4px #0004;
+      letter-spacing: 4px;
+
+      transform: translateX(-256px);
+      transition: transform 256ms;
+    }
+
+    > div {
+      margin-top: 64px;
+      transform: translateX(-256px);
+      transition: transform 256ms;
+
+      > p:first-child {
+        color: $primary;
+        font-size:10pt;
+      }
+      > p:last-child {
+        color: white;
+        font-size: 8pt;
+        letter-spacing: 1px;
+        font-weight: lighter
+      }
+    }
+  }
+  > div:last-child {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+
+    > p {
+      cursor: pointer;
+      color: white;
+      font-weight: lighter;
+      font-size: 14pt;
+
+      transition: font-weight 256ms, color 256ms, transform 256ms;
+      transform: scale(1) translateX(256px);
+
+      &:hover {
+        transition: font-weight 256ms, color 256ms;
+        font-weight: bold;
+        color: $primary;
+      }
+      &:active {
+        transition: transform 256ms;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
