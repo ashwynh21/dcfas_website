@@ -11,13 +11,15 @@ body > div {
   letter-spacing: 2px;
   overflow-x: hidden;
   background: linear-gradient(135deg, #888, #000);
+  display: flex;
+  flex-flow: column;
 }
 
 .background {
   width: 120vw;
   height: 120vh;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
 }
 
 @keyframes popin {
@@ -86,6 +88,16 @@ body > div {
 .navigation > .menu {
   margin-right: 32px;
 }
+.navigation > .search {
+  cursor: pointer;
+  width: 32px;
+  display: none;
+  margin-right: 32px;
+}
+.navigation > .search > img {
+  width: 32px;
+  filter: drop-shadow(0 4px 2px #0002);
+}
 
 .content {
   display: flex;
@@ -149,6 +161,7 @@ body > div {
 .pane {
   display: flex;
   flex-flow: column;
+  align-self: center;
   margin-top: 64px;
 }
 .pane > .panel {
@@ -184,6 +197,8 @@ body > div {
 
 .what {
   margin: 32px;
+  display: flex;
+  flex-flow: column;
 }
 .what > p {
   text-align: right;
@@ -193,12 +208,18 @@ body > div {
   text-shadow: 0 4px 4px #0004;
   letter-spacing: 4px;
 }
-.what > div {
+.what > div:nth-child(2) {
   margin-bottom: 64px;
+}
+.what > div {
   display: flex;
   flex-flow: column;
 }
-.what > div:nth-child(n+1) > div:first-child {
+.what > div > div:first-child {
+  display: flex;
+  flex-flow: column;
+}
+.what > div > div:first-child > div:first-child {
   width: 64px;
   height: 64px;
   border-radius: 32px;
@@ -208,36 +229,33 @@ body > div {
   justify-content: center;
   align-items: center;
 }
-.what > div:nth-child(n+1) > div:first-child > img {
+.what > div > div:first-child > div:first-child > img {
   width: 40px;
 }
-.what > div:nth-child(n+1) > p:nth-child(2) {
+.what > div > div:first-child > p:nth-child(2) {
   color: white;
   font-size: 12pt;
   font-weight: lighter;
 }
-.what > div:nth-child(n+1) > p:nth-child(3) {
+.what > div > div:first-child > p:nth-child(3) {
   color: #FFAA02;
   font-weight: bold;
   font-size: 14pt;
 }
-.what > div:nth-child(n+1) > p:nth-child(4) {
+.what > div > div:first-child > p:nth-child(4) {
   color: white;
   font-weight: lighter;
   font-size: 8pt;
 }
-.what > div:nth-child(n+1) > div:last-child {
-  margin-top: 24px;
-}
-.what > div:nth-child(n+1) > div:last-child > img {
+.what > div > div:last-child > img {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 4px 1px #0002;
 }
-.what > div:nth-child(n+1) {
+.what > div:nth-child(2n+1) > div {
   align-items: flex-end;
 }
-.what > div:nth-child(2n) {
+.what > div:nth-child(2n) > div {
   align-items: flex-start;
 }
 
@@ -342,6 +360,39 @@ body > div {
 }
 .footer > .contact > p:not(:first-child) {
   font-size: 8pt;
+}
+
+@media screen and (min-width: 640px) {
+  /*
+  With tablet mode we should show the search icon
+  */
+  .navigation > .search {
+    display: inline;
+  }
+
+  /*
+  We then make the max width of the pane class 380px to prevent overstretching
+  */
+  .pane {
+    max-width: 380px;
+  }
+
+  /*
+  Then we flex the what panel properly
+  */
+  .what > div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .what > div > div {
+    flex: 1;
+  }
+  .what > div:nth-child(2n+1) {
+    flex-flow: row-reverse;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,4 +22,17 @@
   > .menu {
     margin-right: 32px;
   }
+
+  > .search {
+    cursor: pointer;
+
+    width: 32px;
+    display: none;
+    margin-right: 32px;
+
+    > img {
+      width: 32px;
+      filter: drop-shadow(0 4px 2px #0002);
+    }
+  }
 }

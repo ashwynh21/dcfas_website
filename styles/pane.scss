@@ -2,6 +2,7 @@
 .pane {
   display: flex;
   flex-flow: column;
+  align-self: center;
 
   margin-top: 64px;
   > .panel {

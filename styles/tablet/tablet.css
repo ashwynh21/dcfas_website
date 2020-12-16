@@ -1,0 +1,10 @@
+@media screen and (min-width: 380px) {
+  /*
+  We then make the max width of the pane class 380px to prevent overstretching
+  */
+  .pane {
+    max-width: 380px;
+  }
+}
+
+/*# sourceMappingURL=tablet.css.map */

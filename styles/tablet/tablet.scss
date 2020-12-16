@@ -1,0 +1,36 @@
+
+@media screen and (min-width: 640px) {
+  /*
+  With tablet mode we should show the search icon
+  */
+  .navigation {
+    > .search {
+      display: inline;
+    }
+  }
+  /*
+  We then make the max width of the pane class 380px to prevent overstretching
+  */
+  .pane {
+    max-width: 380px;
+  }
+  /*
+  Then we flex the what panel properly
+  */
+  .what {
+    > div {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+
+      > div {
+        flex: 1
+      }
+    }
+    > div:nth-child(2n + 1) {
+      flex-flow: row-reverse;
+    }
+  }
+}

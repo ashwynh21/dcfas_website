@@ -2,6 +2,8 @@ $primary: #FFAA02;
 
 .what {
   margin: 32px;
+  display: flex;
+  flex-flow: column;
 
   > p {
     text-align: right;
@@ -13,48 +15,52 @@ $primary: #FFAA02;
     letter-spacing: 4px;
   }
 
-  > div {
+  > div:nth-child(2) {
     margin-bottom: 64px;
+  }
+  > div {
     display: flex;
     flex-flow: column;
-  }
-  > div:nth-child(n + 1) {
+
     > div:first-child {
-      width: 64px;
-      height: 64px;
-      border-radius: 32px;
-
-      box-shadow: 0 4px 4px 1px #0002;
-      background: white;
-
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-flow: column;
 
-      > img {
-        width: 40px;
+      > div:first-child {
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+
+        box-shadow: 0 4px 4px 1px #0002;
+        background: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > img {
+          width: 40px;
+        }
+      }
+
+      > p:nth-child(2) {
+        color: white;
+        font-size: 12pt;
+        font-weight: lighter;
+      }
+      > p:nth-child(3) {
+        color: $primary;
+        font-weight: bold;
+
+        font-size: 14pt;
+      }
+      > p:nth-child(4) {
+        color: white;
+        font-weight: lighter;
+        font-size: 8pt;
       }
     }
-
-    > p:nth-child(2) {
-      color: white;
-      font-size: 12pt;
-      font-weight: lighter;
-    }
-    > p:nth-child(3) {
-      color: $primary;
-      font-weight: bold;
-
-      font-size: 14pt;
-    }
-    > p:nth-child(4) {
-      color: white;
-      font-weight: lighter;
-      font-size: 8pt;
-    }
-
     > div:last-child {
-      margin-top: 24px;
       > img {
         width: 100%;
         border-radius: 12px;
@@ -62,10 +68,14 @@ $primary: #FFAA02;
       }
     }
   }
-  > div:nth-child(n + 1) {
-    align-items: flex-end;
+  > div:nth-child(2n + 1) {
+    > div {
+      align-items: flex-end;
+    }
   }
   > div:nth-child(2n) {
-    align-items: flex-start;
+    > div {
+      align-items: flex-start;
+    }
   }
 }
