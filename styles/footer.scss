@@ -1,0 +1,32 @@
+
+.footer {
+  min-height: 256px;
+  padding: 32px;
+
+  background: white;
+  > p:nth-child(2) {
+    color: black;
+    font-weight: bold;
+    font-size: 28pt;
+  }
+  > p:last-child {
+    color: black;
+    font-weight: lighter;
+    font-size: 6pt;
+  }
+
+  > .contact {
+    margin-bottom: 32px;
+    > p {
+      margin: 0;
+    }
+
+    > p:first-child {
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    > p:not(:first-child) {
+      font-size: 8pt
+    }
+  }
+}

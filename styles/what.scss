@@ -14,6 +14,11 @@ $primary: #FFAA02;
   }
 
   > div {
+    margin-bottom: 64px;
+    display: flex;
+    flex-flow: column;
+  }
+  > div:nth-child(n + 1) {
     > div:first-child {
       width: 64px;
       height: 64px;
@@ -30,6 +35,7 @@ $primary: #FFAA02;
         width: 40px;
       }
     }
+
     > p:nth-child(2) {
       color: white;
       font-size: 12pt;
@@ -46,6 +52,7 @@ $primary: #FFAA02;
       font-weight: lighter;
       font-size: 8pt;
     }
+
     > div:last-child {
       margin-top: 24px;
       > img {
@@ -54,5 +61,11 @@ $primary: #FFAA02;
         box-shadow: 0 4px 4px 1px #0002;
       }
     }
+  }
+  > div:nth-child(n + 1) {
+    align-items: flex-end;
+  }
+  > div:nth-child(2n) {
+    align-items: flex-start;
   }
 }

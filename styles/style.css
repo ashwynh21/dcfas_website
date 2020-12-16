@@ -4,6 +4,9 @@ of content to be straight forward...
 */
 body {
   margin: 0;
+}
+body > div {
+  margin: 0;
   font-family: Segoe UI, sans-serif;
   letter-spacing: 2px;
   overflow-x: hidden;
@@ -190,7 +193,12 @@ body {
   text-shadow: 0 4px 4px #0004;
   letter-spacing: 4px;
 }
-.what > div > div:first-child {
+.what > div {
+  margin-bottom: 64px;
+  display: flex;
+  flex-flow: column;
+}
+.what > div:nth-child(n+1) > div:first-child {
   width: 64px;
   height: 64px;
   border-radius: 32px;
@@ -200,31 +208,140 @@ body {
   justify-content: center;
   align-items: center;
 }
-.what > div > div:first-child > img {
+.what > div:nth-child(n+1) > div:first-child > img {
   width: 40px;
 }
-.what > div > p:nth-child(2) {
+.what > div:nth-child(n+1) > p:nth-child(2) {
   color: white;
   font-size: 12pt;
   font-weight: lighter;
 }
-.what > div > p:nth-child(3) {
+.what > div:nth-child(n+1) > p:nth-child(3) {
   color: #FFAA02;
   font-weight: bold;
   font-size: 14pt;
 }
-.what > div > p:nth-child(4) {
+.what > div:nth-child(n+1) > p:nth-child(4) {
   color: white;
   font-weight: lighter;
   font-size: 8pt;
 }
-.what > div > div:last-child {
+.what > div:nth-child(n+1) > div:last-child {
   margin-top: 24px;
 }
-.what > div > div:last-child > img {
+.what > div:nth-child(n+1) > div:last-child > img {
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 4px 1px #0002;
+}
+.what > div:nth-child(n+1) {
+  align-items: flex-end;
+}
+.what > div:nth-child(2n) {
+  align-items: flex-start;
+}
+
+.find {
+  margin: 32px;
+}
+.find > p:first-child {
+  text-align: right;
+  font-weight: bold;
+  font-size: 24pt;
+  color: white;
+  text-shadow: 0 4px 4px #0004;
+  letter-spacing: 4px;
+}
+.find > p:nth-child(2) {
+  color: white;
+  font-weight: lighter;
+  font-size: 8pt;
+}
+.find > div {
+  width: 100%;
+  height: 400px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px 1px #0002;
+}
+.find > div > img {
+  object-fit: cover;
+}
+
+.services {
+  margin: 64px;
+}
+.services > p:first-child {
+  text-align: right;
+  font-weight: bold;
+  font-size: 24pt;
+  color: white;
+  text-shadow: 0 4px 4px #0004;
+  letter-spacing: 4px;
+}
+.services > p:nth-child(2), .services > p:nth-child(4) {
+  color: white;
+  font-weight: lighter;
+  font-size: 8pt;
+}
+.services > p:nth-child(3) {
+  color: #FFAA02;
+  font-weight: bold;
+  font-size: 14pt;
+}
+.services > form {
+  display: flex;
+  flex-flow: column;
+  margin-top: 32px;
+}
+.services > form > input {
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+}
+.services > form > button {
+  margin-top: 24px;
+  width: 80px;
+  height: 44px;
+  border-radius: 12px;
+  background: #FFAA02;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.footer {
+  min-height: 256px;
+  padding: 32px;
+  background: white;
+}
+.footer > p:nth-child(2) {
+  color: black;
+  font-weight: bold;
+  font-size: 28pt;
+}
+.footer > p:last-child {
+  color: black;
+  font-weight: lighter;
+  font-size: 6pt;
+}
+.footer > .contact {
+  margin-bottom: 32px;
+}
+.footer > .contact > p {
+  margin: 0;
+}
+.footer > .contact > p:first-child {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.footer > .contact > p:not(:first-child) {
+  font-size: 8pt;
 }
 
 /*# sourceMappingURL=style.css.map */

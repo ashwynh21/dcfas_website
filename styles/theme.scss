@@ -5,12 +5,15 @@ of content to be straight forward...
 
 body {
   margin: 0;
-  font-family: Segoe UI, sans-serif;
-  letter-spacing: 2px;
+  > div {
+    margin: 0;
+    font-family: Segoe UI, sans-serif;
+    letter-spacing: 2px;
 
-  overflow-x: hidden;
+    overflow-x: hidden;
 
-  background: linear-gradient(135deg, #888, #000);
+    background: linear-gradient(135deg, #888, #000);
+  }
 }
 
 .background {

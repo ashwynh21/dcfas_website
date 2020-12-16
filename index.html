@@ -15,112 +15,169 @@
 </head>
 <body onload="loader.load()">
 <!--
-Lets start in layers by first creating the background
+We wrap in a div because overflow-x wont work on the body tag in mobile browsers...
 -->
-<div class="background">
-    <svg xmlns="http://www.w3.org/2000/svg" width="585.612" height="1051.155" viewBox="0 0 585.612 1051.155">
-        <g id="background" transform="matrix(0.454, 0.891, -0.891, 0.454, 467.246, -191.087)">
-            <path id="Path_29" data-name="Path 29" d="M153.826,356.262,789.948,2.637,768,499.983,311.752,54.56.756,226.674,1010.038,411.066,943.259,204.635" transform="matrix(0.848, 0.53, -0.53, 0.848, 264.313, -0.075)" fill="none" stroke="#707070" stroke-width="1"/>
-        </g>
-    </svg>
-</div>
-<!--
-Then we create the navigation bar
--->
-<div class="navigation">
+<div>
     <!--
-    Here we will have the logo
+    Lets start in layers by first creating the background
     -->
-    <div class="logo">
-        <img src="favicon.png" alt="dcfas">
+    <div class="background">
+        <svg xmlns="http://www.w3.org/2000/svg" width="585.612" height="1051.155" viewBox="0 0 585.612 1051.155">
+            <g id="background" transform="matrix(0.454, 0.891, -0.891, 0.454, 467.246, -191.087)">
+                <path id="Path_29" data-name="Path 29" d="M153.826,356.262,789.948,2.637,768,499.983,311.752,54.56.756,226.674,1010.038,411.066,943.259,204.635" transform="matrix(0.848, 0.53, -0.53, 0.848, 264.313, -0.075)" fill="none" stroke="#707070" stroke-width="1"/>
+            </g>
+        </svg>
     </div>
     <!--
-    Menu will go here
+    Then we create the navigation bar
     -->
-    <div class="menu">
-        <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg id="menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-             viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+    <div class="navigation">
+        <!--
+        Here we will have the logo
+        -->
+        <div class="logo">
+            <img src="favicon.png" alt="dcfas">
+        </div>
+        <!--
+        Menu will go here
+        -->
+        <div class="menu">
+            <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg id="menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
             <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="4.7526" y1="8.7797" x2="27.2474" y2="8.7797">
                 <stop  offset="0" style="stop-color:#FFAA02"/>
                 <stop  offset="1" style="stop-color:#CC8100"/>
             </linearGradient>
-            <line fill="none" class="filter" id="top" stroke="url(#gradient)" stroke-width="2.56" stroke-linecap="round" stroke-miterlimit="10" x1="6.3" y1="8.8" x2="25.7" y2="8.8"/>
-            <line fill="none" class="filter" id="middle" stroke="url(#gradient)" stroke-width="2.56" stroke-linecap="round" stroke-miterlimit="10" x1="6.3" y1="16" x2="25.7" y2="16"/>
-            <line fill="none" class="filter" id="bottom" stroke="url(#gradient)" stroke-width="2.56" stroke-linecap="round" stroke-miterlimit="10" x1="6.3" y1="23.2" x2="25.7" y2="23.2"/>
+                <line fill="none" class="filter" id="top" stroke="url(#gradient)" stroke-width="2.56" stroke-linecap="round" stroke-miterlimit="10" x1="6.3" y1="8.8" x2="25.7" y2="8.8"/>
+                <line fill="none" class="filter" id="middle" stroke="url(#gradient)" stroke-width="2.56" stroke-linecap="round" stroke-miterlimit="10" x1="6.3" y1="16" x2="25.7" y2="16"/>
+                <line fill="none" class="filter" id="bottom" stroke="url(#gradient)" stroke-width="2.56" stroke-linecap="round" stroke-miterlimit="10" x1="6.3" y1="23.2" x2="25.7" y2="23.2"/>
         </svg>
+        </div>
     </div>
-</div>
-<!--
-Here we will need to add the single page for the splash content
--->
-<div class="content">
-    <div id="content">
+    <!--
+    Here we will need to add the single page for the splash content
+    -->
+    <div class="content">
+        <div id="content">
+            <p>DCFAS</p>
+            <p>We're Here to help</p>
+
+            <div>
+                <p>How we work?</p>
+                <p>We work with our clients and their credit providers to find the best way to live and resolve all debt on their ledger</p>
+            </div>
+        </div>
+        <div id="sections">
+            <p>Who?</p>
+            <p>What?</p>
+            <p>Where?</p>
+            <p>How?</p>
+        </div>
+    </div>
+    <!--
+    So then we add in the panels for showing what the organization does...
+    -->
+    <div class="pane">
+        <div data-aos="fade-right" class="panel">
+            <img src="assets/icons/dabel.png" alt="">
+            <div>
+                <p>Free From the burden of over-endebtment</p>
+                <p>Allow us to manage your debts for you, free yourself from overbearing credit providers</p>
+            </div>
+        </div>
+        <div data-aos="fade-left" class="panel">
+            <img src="assets/icons/savings.png" alt="">
+            <div>
+                <p>Protect Your Income</p>
+                <p>Barely keeping any income for a living, let us help and keep you living considered with your credit providers</p>
+            </div>
+        </div>
+        <div data-aos="fade-right" class="panel">
+            <img src="assets/icons/quality.png" alt="">
+            <div>
+                <p>We are No. 1</p>
+                <p>We are the best when considering your well being, allow us to help you</p>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    Now we add in the what of the page
+    -->
+    <div class="what">
+        <p data-aos="fade-left">We are Debt Counsellors</p>
+
+        <div>
+            <div data-aos="fade-right">
+                <img src="assets/icons/purse.png" alt="">
+            </div>
+            <p data-aos="fade-right">Debt Rescheduling</p>
+            <p data-aos="fade-right">We Re-order debt premiums with credit providers</p>
+            <p data-aos="fade-right">We spend time with your credit providers, re-ordering and negotiating for better premiums that you, the client, can cope with</p>
+            <div data-aos="fade-right">
+                <img src="assets/images/negotiating.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <div data-aos="fade-left">
+                <img src="assets/icons/privacy.png" alt="">
+            </div>
+            <p data-aos="fade-left">Client Privacy</p>
+            <p data-aos="fade-left">Our client information is strictly confidential.</p>
+            <p data-aos="fade-left">All information shared between the client, and credit providers is discussed on a need to know basis to the credit providers.</p>
+            <div data-aos="fade-left">
+                <img src="assets/images/padlock.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--
+    Then we add the section about finding us with the google map
+    -->
+    <div class="find">
+        <p data-aos="fade-left">Find Us</p>
+        <p data-aos="fade-left">Currently , we are based in Manzini Eswatini. Our premises are at the Liqhaga House</p>
+        <div data-aos="fade-left">
+            <img src="assets/images/map.png" alt="">
+        </div>
+    </div>
+    <!--
+    And just before the footer we put in the contact us form, a pretty simple form
+    -->
+    <div class="services">
+        <p data-aos="fade-left">Get Our Services</p>
+        <p data-aos="fade-left">1.</p>
+        <p data-aos="fade-left">Submit your application today with us</p>
+        <p data-aos="fade-left">Simply drop your email address and hit submit and you will get an email with our application form as well as instructions on how to fill it in and submit it back to us.</p>
+
+        <form action="">
+            <input data-aos="fade-left" type="email" placeholder="Email Address">
+            <button data-aos="fade-left">submit</button>
+        </form>
+    </div>
+    <!--
+    And now for the footer
+    -->
+    <div class="footer">
+        <img src="favicon.png" alt="">
         <p>DCFAS</p>
-        <p>We're Here to help</p>
 
-        <div>
-            <p>How we work?</p>
-            <p>We work with our clients and their credit providers to find the best way to live and resolve all debt on their ledger</p>
+        <div class="contact">
+            <p>Contact Us On</p>
+            <p>TEL: 2505 1331</p>
+            <p>CEL: 7604 0825 / 7904 0825</p>
+            <br/>
+            <p>Liqhaga House, Corner of Nkoseluhlaza &amp; Masalekhaya Street, Office No. 102 Manzini</p>
         </div>
+        <p>Debt Counselling & Financial Services | &copy;copyright 2020</p>
     </div>
-    <div id="sections">
-        <p>Who?</p>
-        <p>What?</p>
-        <p>Where?</p>
-        <p>How?</p>
-    </div>
-</div>
-<!--
-So then we add in the panels for showing what the organization does...
--->
-<div class="pane">
-    <div data-aos="fade-right" class="panel">
-        <img src="assets/icons/dabel.png" alt="">
-        <div>
-            <p>Free From the burden of over-endebtment</p>
-            <p>Allow us to manage your debts for you, free yourself from overbearing credit providers</p>
-        </div>
-    </div>
-    <div data-aos="fade-left" class="panel">
-        <img src="assets/icons/savings.png" alt="">
-        <div>
-            <p>Protect Your Income</p>
-            <p>Barely keeping any income for a living, let us help and keep you living considered with your credit providers</p>
-        </div>
-    </div>
-    <div data-aos="fade-right" class="panel">
-        <img src="assets/icons/quality.png" alt="">
-        <div>
-            <p>We are No. 1</p>
-            <p>We are the best when considering your well being, allow us to help you</p>
-        </div>
-    </div>
-</div>
 
-<!--
-Now we add in the what of the page
--->
-<div class="what">
-    <p data-aos="fade-left">We are Debt Counsellors</p>
-    <div>
-        <div>
-            <img src="assets/icons/purse.png" alt="">
-        </div>
-        <p>Debt Rescheduling</p>
-        <p>We Re-order debt premiums with credit providers</p>
-        <p>We spend time with your credit providers, re-ordering and negotiating for better premiums that you, the client, can cope with</p>
-        <div>
-            <img src="assets/images/negotiating.jpg" alt="">
-        </div>
+    <!--
+    We then creat the menu here
+    -->
+    <div id="floater">
+
     </div>
-</div>
-
-<!--
-We then creat the menu here
--->
-<div id="floater">
-
 </div>
 
 <script src="scripts/menu.js"></script>
