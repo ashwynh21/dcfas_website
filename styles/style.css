@@ -15,6 +15,11 @@ body > div {
   flex-flow: column;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .background {
   width: 120vw;
   height: 120vh;
@@ -87,6 +92,24 @@ body > div {
 }
 .navigation > .menu {
   margin-right: 32px;
+}
+.navigation .mx-menu {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 44px;
+  color: white;
+}
+.navigation .mx-menu > div {
+  font-size: 14pt;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: transform 256ms;
+  transform: scale(1);
+}
+.navigation .mx-menu > div:hover {
+  transition: transform 256ms;
+  transform: scale(1.1);
 }
 .navigation > .search {
   cursor: pointer;
@@ -362,7 +385,7 @@ body > div {
   font-size: 8pt;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) {
   /*
   With tablet mode we should show the search icon
   */
@@ -392,6 +415,74 @@ body > div {
   }
   .what > div:nth-child(2n+1) {
     flex-flow: row-reverse;
+  }
+}
+@media screen and (min-width: 1028px) {
+  .navigation .mx-menu {
+    display: flex;
+  }
+  .navigation .menu {
+    display: none;
+  }
+
+  .content > #content {
+    padding-left: 164px;
+  }
+  .content > #content > p:first-child {
+    font-size: 32pt;
+    margin: 0;
+  }
+  .content > #content > p:nth-child(2) {
+    margin-left: 128px;
+    font-size: 32pt;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .content > #content > div:nth-child(3) {
+    width: 256px;
+    margin-left: 400px;
+  }
+
+  .pane {
+    display: flex;
+    flex-flow: row;
+    max-width: none;
+  }
+  .pane > .panel {
+    max-width: 320px;
+    height: 200px;
+  }
+  .pane > .panel:nth-child(2) {
+    margin-top: 128px;
+  }
+  .pane > .panel:nth-child(3) {
+    margin-top: 256px;
+  }
+
+  .what {
+    display: flex;
+    flex-flow: column;
+    margin: 96px 20% 0;
+  }
+  .what > p {
+    align-self: flex-end;
+    text-align: left;
+  }
+  .what > div > div {
+    max-width: 320px;
+  }
+
+  .find {
+    display: flex;
+    flex-flow: column;
+    margin: 96px 20% 0;
+  }
+
+  .services {
+    margin: 0 20% 48px;
+  }
+  .services > form {
+    max-width: 512px;
   }
 }
 

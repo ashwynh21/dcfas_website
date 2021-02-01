@@ -22,6 +22,27 @@
   > .menu {
     margin-right: 32px;
   }
+  .mx-menu {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 44px;
+    color: white;
+    > div {
+      font-size: 14pt;
+      font-weight: bolder;
+      cursor: pointer;
+
+      transition: transform 256ms;
+      transform: scale(1);
+    }
+
+    > div:hover {
+      transition: transform 256ms;
+      transform: scale(1.1);
+    }
+  }
 
   > .search {
     cursor: pointer;

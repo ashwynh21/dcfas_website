@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DCFAS | About</title>
+
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+
+    <script src="../node_modules/animejs/lib/anime.min.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+</head>
+<body>
+<div>
+    <!--
+    Lets start in layers by first creating the background
+    -->
+    <div class="background">
+        <svg xmlns="http://www.w3.org/2000/svg" width="585.612" height="1051.155" viewBox="0 0 585.612 1051.155">
+            <g id="background" transform="matrix(0.454, 0.891, -0.891, 0.454, 467.246, -191.087)">
+                <path id="Path_29" data-name="Path 29" d="M153.826,356.262,789.948,2.637,768,499.983,311.752,54.56.756,226.674,1010.038,411.066,943.259,204.635" transform="matrix(0.848, 0.53, -0.53, 0.848, 264.313, -0.075)" fill="none" stroke="#707070" stroke-width="1"/>
+            </g>
+        </svg>
+    </div>
+
+    <!--
+    Then we create the navigation bar
+    -->
+    <div class="navigation">
+        <!--
+        Here we will have the logo
+        -->
+        <div class="logo">
+            <img src="../favicon.png" alt="dcfas">
+        </div>
+        <!--
+        Menu will go here
+        -->
+        <div class="menu">
+            <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg id="menu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+                <linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="4.7526" y1="8.7797" x2="27.2474" y2="8.7797">
+                    <stop  offset="0" style="stop-color:#FFAA02"/>
+                    <stop  offset="1" style="stop-color:#CC8100"/>
+                </linearGradient>
+                <line fill="none" class="filter" id="top" stroke="url(#gradient)" stroke-width="2.56" stroke-linecap="round" stroke-miterlimit="10" x1="6.3" y1="8.8" x2="25.7" y2="8.8"/>
+                <line fill="none" class="filter" id="middle" stroke="url(#gradient)" stroke-width="2.56" stroke-linecap="round" stroke-miterlimit="10" x1="6.3" y1="16" x2="25.7" y2="16"/>
+                <line fill="none" class="filter" id="bottom" stroke="url(#gradient)" stroke-width="2.56" stroke-linecap="round" stroke-miterlimit="10" x1="6.3" y1="23.2" x2="25.7" y2="23.2"/>
+            </svg>
+        </div>
+        <!--
+        Here we need to place an alternative to the menu so when we go full desktop size it can show instead of the icon
+        -->
+        <div class="mx-menu">
+            <div><a href="../">Home</a></div>
+            <div><a href="../about">About</a></div>
+            <div><a href="../faq">FAQ</a></div>
+        </div>
+
+        <!--
+        We then add the search icon here
+        -->
+        <div class="search">
+            <img src="../assets/icons/search.svg" alt="">
+        </div>
+    </div>
+
+    <!--
+    And now for the footer
+    -->
+    <div class="footer">
+        <img src="favicon.png" alt="">
+        <p>DCFAS</p>
+
+        <div class="contact">
+            <p>Contact Us On</p>
+            <p>TEL: 2505 1331</p>
+            <p>CEL: 7604 0825 / 7904 0825</p>
+            <br/>
+            <p>Liqhaga House, Corner of Nkoseluhlaza &amp; Masalekhaya Street, Office No. 102 Manzini</p>
+        </div>
+        <p>Debt Counselling & Financial Services | &copy;copyright 2020</p>
+    </div>
+
+    <!--
+    We then creat the menu here
+    -->
+    <div id="floater">
+
+    </div>
+</div>
+
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/loader.js"></script>
+    <script src="../scripts/index.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+
+@media screen and (min-width: 1028px) {
+  .navigation {
+    .mx-menu {
+      display: flex
+    }
+    .menu {
+      display: none;
+    }
+  }
+
+  .content {
+    > #content {
+      padding-left: 164px;
+
+      > p:first-child {
+        font-size: 32pt;
+        margin: 0;
+      }
+      > p:nth-child(2) {
+        margin-left: 128px;
+        font-size: 32pt;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      > div:nth-child(3) {
+        width: 256px;
+        margin-left: 400px;
+      }
+    }
+  }
+
+  .pane {
+    display: flex;
+    flex-flow: row;
+    max-width: none;
+
+    > .panel {
+      max-width: 320px;
+      height: 200px;
+    }
+
+    > .panel:nth-child(2) {
+      margin-top: 128px;
+    }
+    > .panel:nth-child(3) {
+      margin-top: 256px;
+    }
+  }
+
+  .what {
+    display: flex;
+    flex-flow: column;
+    margin: 96px 20% 0;
+
+    > p {
+      align-self: flex-end;
+      text-align: left;
+    }
+
+    > div {
+      > div {
+        max-width: 320px;
+      }
+    }
+  }
+
+  .find {
+    display: flex;
+    flex-flow: column;
+    margin: 96px 20% 0;
+  }
+
+  .services {
+    margin: 0 20% 48px;
+
+    > form {
+      max-width: 512px;
+    }
+  }
+}
