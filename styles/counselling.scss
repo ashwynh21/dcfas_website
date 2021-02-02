@@ -1,0 +1,62 @@
+
+.counselling {
+
+  > p {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 4px 4px #0002;
+
+    font-size: 16pt;
+    margin-bottom: 40px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  > div {
+    display: flex;
+    gap: 48px;
+    margin-bottom: 12px;
+    margin-left: 24px;
+    margin-right: 24px;
+    flex-flow: column;
+
+    > div {
+      flex: 1;
+      flex-wrap: wrap;
+      display: flex;
+      gap: 12px;
+
+      > div:first-child {
+        min-width: 64px;
+        height: 64px;
+
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0 4px 4px 1px #0002;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > img {
+          position: relative;
+          object-fit: contain;
+          width: 40px;
+        }
+      }
+
+      > div:last-child {
+        > p:first-child {
+          color: white;
+          font-size: 14pt;
+          font-weight: bold;
+        }
+        > p:last-child {
+          color: white;
+          font-size: 10pt;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

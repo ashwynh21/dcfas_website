@@ -416,6 +416,10 @@ a {
   .what > div:nth-child(2n+1) {
     flex-flow: row-reverse;
   }
+
+  .counselling {
+    margin: 0 20% 48px;
+  }
 }
 @media screen and (min-width: 1028px) {
   .navigation .mx-menu {
@@ -484,6 +488,80 @@ a {
   .services > form {
     max-width: 512px;
   }
+
+  .counselling {
+    margin: 0 20% 48px;
+  }
+  .counselling > form {
+    max-width: 512px;
+  }
+  .counselling > div {
+    flex-flow: row !important;
+  }
+}
+.titling {
+  min-width: 320px;
+  max-width: 60%;
+  margin: 128px auto;
+}
+.titling > p:first-child {
+  font-size: 24pt;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 4px 4px #0002;
+}
+.titling > p:last-child {
+  font-size: 10pt;
+  color: white;
+}
+
+.counselling > p {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 4px 4px #0002;
+  font-size: 16pt;
+  margin-bottom: 40px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.counselling > div {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+  flex-flow: column;
+}
+.counselling > div > div {
+  flex: 1;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 12px;
+}
+.counselling > div > div > div:first-child {
+  min-width: 64px;
+  height: 64px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 1px #0002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counselling > div > div > div:first-child > img {
+  position: relative;
+  object-fit: contain;
+  width: 40px;
+}
+.counselling > div > div > div:last-child > p:first-child {
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+}
+.counselling > div > div > div:last-child > p:last-child {
+  color: white;
+  font-size: 10pt;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
