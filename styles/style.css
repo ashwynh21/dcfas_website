@@ -71,6 +71,14 @@ a {
   top: 0;
   width: 256px;
   background: linear-gradient(135deg, #000, #888);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+#floater > div {
+  font-weight: bold;
 }
 
 .navigation {

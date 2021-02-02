@@ -34,4 +34,14 @@ $secondary: #FFAA02;
 
   width: 256px;
   background: linear-gradient(135deg, #000, #888);
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  > div {
+    font-weight: bold;
+  }
 }
